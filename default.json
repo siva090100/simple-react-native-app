@@ -1,0 +1,494 @@
+{
+  "Questionaire": [
+    {
+      "﻿skill": "",
+      "questions": "Is bool a fundamental data type in C++?",
+      "choices": "a)Yes\nb)No, it is a typedef of unsigned char\nc)No, it is an enum of {false, true}\nd)No, it is expanded from macros\n\n",
+      "answer": "a",
+      "explanation": "C++ has bool as a fundamental data type"
+    },
+    {
+      "﻿skill": "",
+      "questions": "Find the odd one out.",
+      "choices": "a)std::vector<int>\nb)std::vector<short>\nc)std::vector<long>\nd)std::vector<bool>\n",
+      "answer": "d",
+      "explanation": "std::vector<bool> is a specialized version of vector, which is used for elements of type bool and optimizes for space. It behaves like the unspecialized version of vector and the storage is not necessarily an array of bool values, but the library implementation may optimize storage so that each value is stored in a single bit."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is the value of the bool? bool is_int(789.54)",
+      "choices": "a)True\nb)False\nc)1\nd)2\n",
+      "answer": "b",
+      "explanation": "The given number is a double not an integer, so the function returns 0 which is boolean false"
+    },
+    {
+      "﻿skill": null,
+      "questions": "What happens when a null pointer is converted into bool?",
+      "choices": "a) an error is flagged\nb) bool value evaluates to true\nc) bool value evaluates to false\nd) the statement is ignored\n",
+      "answer": "c",
+      "explanation": "A pointer can be implicitly converted to a bool. A nonzero pointer converts to true and zero valued pointer converts to false"
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of the following statements are false?",
+      "choices": "a) bool can have two values and can be used to express logical expressions\nb) bool cannot be used as the type of the result of the function\nc) bool can be converted into integers implicitly\nd) a bool value can be used in arithmetic expressions\n",
+      "answer": "b",
+      "explanation": "Boolean can be used as a return value of a function"
+    },
+    {
+      "﻿skill": null,
+      "questions": "For what values of the expression is an if-statement block not executed?",
+      "choices": "a)0 and all negative values\nb)0 and - 1\nc)0\nd)0, all negative values, all positive values except 1\n",
+      "answer": "c",
+      "explanation": "The if-statement block is only not executed when the expression evaluates to 0. its just syntactic sugar for a branch-if-zero instruction"
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of the two operators ++ and — work for the bool data type in C++?",
+      "choices": "a)None\nb)++\nc) —\nd) ++ & —\n",
+      "answer": "b",
+      "explanation": "Due to the history of using integer values as booleans, if an integer is used as a boolean, then incrementing will mean that whatever its truth value before the operation, it will have a truth-value of true after it. However, it is not possible to predict the result of — given knowledge only of the truth value of x, as it could result in false"
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n1.     #include <iostream>\n2.     using namespace std;\n3.     int f(int p, int q)\n4.     {\n5.         if (p > q)\n6.             return p;\n7.         else\n8.             return q;\n9.     }\n10.     main()\n11.     {\n12.         int a = 5, b = 10;\n13.         int k;\n14.         bool x = true;\n15.         bool y = f(a, b);\n16.         k =((a * b) + (x + y));\n17.         cout << k;\n18.     }\n",
+      "choices": "a)55\nb)62\nc)52\nd)75\n",
+      "answer": "c",
+      "explanation": "In this question, value of x = true and value of y will be also true as f(a,b) will return a non-zero value. Now when adding these values with integers, the implicit type conversion takes place hence converting both x and y to 1(integer equivalent of bool true value). So expression (a*b) + (x+y) is evaluated to 52."
+    },
+    {
+      "﻿skill": null,
+      "questions": "How many characters are specified in the ASCII scheme?",
+      "choices": "a) 64\nb) 128\nc) 256\nd) 24\n",
+      "answer": "b",
+      "explanation": "There are 128 characters defined in the C++ ASCII list."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Given the variables p, q are of char type and r, s, t are of int type. Select the right statement?\n    1. t = (r * s) / (r + s);\n    2. t = (p * q) / (r + s);\n",
+      "choices": "a) 1 is true but 2 is false\nb) 1 is false and 2 is true\nc) both 1 and 2 are true\nd) both 1 and 2 are false\n",
+      "answer": "c",
+      "explanation": "Explanation: Every character constant has an integer value. Also char belongs to the integral type hence arithmetic and logical operations can be performed on them."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of the following belongs to the set of character types?",
+      "choices": "a) char\nb) wchar_t\nc) only a\nd) both wchar_t and char\n",
+      "answer": "d",
+      "explanation": "wchar_t and char are used to represent wide character and character"
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n1.     #include <iostream>\n2.     using namespace std;\n3.     int main()\n4.     {\n5.         char c = 74;\n6.         cout << c;\n7.         return 0;\n8.     }\n",
+      "choices": "a) A\nb) N\nc) J\nd) I\n",
+      "answer": "c",
+      "explanation": "The literal value for 74 is J. So it will be printing J."
+    },
+    {
+      "﻿skill": null,
+      "questions": "How do we represent a wide character of the form wchar_t?",
+      "choices": "a) L’a’\nb) l’a’\nc) L[a]\nd) la\n",
+      "answer": "a",
+      "explanation": "A wide character is always indicated by immediately preceding the character literal by an L."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n1.     #include <stdio.h>\n2.     int main()\n3.     {\n4.         char a = '\\012';\n5.  \n6.         printf(\"%d\", a);\n7.         return 0;\n8.     }\n",
+      "choices": "a) Compiler error\nb) 12\nc) 10\nd) Empty\n",
+      "answer": "c",
+      "explanation": "The value ‘\\012’ means the character with value 12 in octal, which is decimal 10."
+    },
+    {
+      "﻿skill": null,
+      "questions": "In C++, what is the sign of character data type by default?",
+      "choices": "a) Signed\nb) Unsigned\nc) Implementation dependent\nd) Unsigned Implementation\n",
+      "answer": "c",
+      "explanation": "The standard does not specify if plain char is signed or unsigned. There are three distinct character types according to the standard: char, signed char and unsigned char."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Suppose in a hypothetical machine, the size of char is 32 bits. What would sizeof(char) return?",
+      "choices": "a) 4\nb) 1\nc) Implementation dependent\nd) Machine dependent\n",
+      "answer": "b",
+      "explanation": "The standard does NOT require a char to be 8-bits, but does require that sizeof(char) return 1."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What constant defined in <climits> header returns the number of bits in a char?",
+      "choices": "a) CHAR_SIZE\nb) SIZE_CHAR\nc) BIT_CHAR\nd) CHAR_BIT\n",
+      "answer": "d",
+      "explanation": "CHAR_BIT is a macro constant defined in <climits> header file which expresses the number of bits in a character object in bytes."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Is the size of character literals different in C and C++?",
+      "choices": "a) Implementation defined\nb) Can’t say\nc) Yes, they are different\nd) No, they are not different\n",
+      "answer": "c",
+      "explanation": "In C++, sizeof(‘a’) == sizeof(char) == 1. In C however, sizeof(‘a’) == sizeof(int)."
+    },
+    {
+      "﻿skill": null,
+      "questions": "The size_t integer type in C++ is?",
+      "choices": "a) Unsigned integer of at least 64 bits\nb) Signed integer of at least 16 bits\nc) Unsigned integer of at least 16 bits\nd) Signed integer of at least 64 bits\n",
+      "answer": "c",
+      "explanation": "The size_t type is used to represent the size of an object. Hence, it’s always unsigned. According to the language specification, it is at least 16 bits."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++  code? 1.     #include <iostream>\n2.     using namespace std;\n3.     int main()\n4.     {\n5.      int x = -1;\n6.         unsigned int y = 2;\n7.  \n8.         if(x > y) \n9.         {\n10.          cout << \"x is greater\";\n11.      }\n12.         else \n13.         {\n14.       cout << \"y is greater\";\n15.      }      \n16.     }\n",
+      "choices": "a) x is greater\nb) y is greater\nc) implementation defined\nd) arbitrary\n",
+      "answer": "a",
+      "explanation": "x is promoted to unsigned int on comparison. On conversion x has all bits set, making it the bigger one."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of these expressions will return true if the input integer v is a power of two?",
+      "choices": "a) (v | (v + 1)) == 0;\nb) (~v & (v – 1)) == 0;\nc) (v | (v – 1)) == 0;\nd) (v & (v – 1)) == 0;\n",
+      "answer": "d",
+      "explanation": " Power of two integers have a single set bit followed by unset bits."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is the value of the following 8-bit integer after all statements are executed? 1. int x = 1;\n2. x = x << 7;\n3. x = x >> 7;\n",
+      "choices": "a) 1\nb) -1\nc) 127\nd) Implementation defined\n",
+      "answer": "d",
+      "explanation": "Right shift of signed integers is undefined, and has implementation-defined behaviour."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of these expressions will make the rightmost set bit zero in an input integer x?",
+      "choices": "a) x = x | (x-1)\nb) x = x & (x-1)\nc) x = x | (x+1)\nd) x = x & (x+2)\n",
+      "answer": "b",
+      "explanation": "If x is odd the last bit will be 1 and last bit of x-1 will become 0. If x is even then last bit of x will be 0 and last bit of x-1 will become 1. In both case AND operation of 1 and 0 will be 0. Hence last bit of final x will be 0."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of these expressions will isolate the rightmost set bit?",
+      "choices": "a) x = x & (~x)\nb) x = x ^ (~x)\nc) x = x & (-x)\nd) x = x ^ (-x)\n",
+      "answer": "c",
+      "explanation": ": Negative of a number is stores as 2;s complement in C++, so when you will take AND of x and (-x) the rightmost digit will be preserved."
+    },
+    {
+      "﻿skill": null,
+      "questions": "0946, 786427373824, ‘x’ and 0X2f are _____ _____ ____ and _____ literals respectively.",
+      "choices": "a) decimal, character, octal, hexadecimal\nb) octal, hexadecimal, character, decimal\nc) hexadecimal, octal, decimal, character\nd) octal, decimal, character, hexadecimal\n",
+      "answer": "d",
+      "explanation": "Literal integer constants that begin with 0x or 0X are interpreted as hexadecimal and the ones that begin with 0 as octal. The character literal are written within ”."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code? #include <iostream>\n2.     using namespace std;\n3.     int main()\n4.     {\n5.         int a = 8;\n6.         cout << \"ANDing integer 'a' with 'true' :\" << a && true;\n7.         return 0;\n8.     }\n",
+      "choices": "a) ANDing integer ‘a’ with ‘true’ :8\nb) ANDing integer ‘a’ with ‘true’ :0\nc) ANDing integer ‘a’ with ‘true’ :1\nd) ANDing integer ‘a’ with ‘true’ :9\n",
+      "answer": "a",
+      "explanation": "The && operator in C++ uses short-circuit evaluation so that if bool1 evaluates to false it doesn’t bother evaluating bool2. So as here bool1 is 8 which is true as it is non-zero so C++ does not cares about the expression further and prints the answer of expression which is 8. If you write true && 8 then the output will be 1 because true is true and its integer equivalent is 1 so 1 will be printed."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n1.     #include <iostream>\n2.     using namespace std;\n3.     int main()\n4.     {\n5.         int i = 3;\n6.         int l = i / -2;\n7.         int k = i % -2;\n8.         cout << l << k;\n9.         return 0;\n10.     }\n",
+      "choices": "a) compile time error\nb) -1 1\nc) 1 -1\nd) implementation defined\n",
+      "answer": "b",
+      "explanation": "Sign of result of mod operation on negative numbers is sign of the dividend."
+    },
+    {
+      "﻿skill": null,
+      "questions": ". What will be the output of the following C++ function?\n1.     int main()\n2.     {\n3.         register int i = 1;\n4.         int *ptr = &i;\n5.         cout << *ptr;\n6.  return 0;\n7.     }\n",
+      "choices": "a) 0\nb) 1\nc) Compiler error may be possible\nd) Runtime error may be possible\n",
+      "answer": "c",
+      "explanation": "Using & on a register variable may be invalid, since the compiler may store the variable in a register, and finding the address of it is illegal."
+    },
+    {
+      "﻿skill": null,
+      "questions": null,
+      "choices": null,
+      "answer": null,
+      "explanation": null
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of the following correctly declares an array?",
+      "choices": "a) int array[10];\nb) int array;\nc) array{10};\nd) array array[10];",
+      "answer": "a",
+      "explanation": "Because array variable and values need to be declared after the datatype only."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is the index number of the last element of an array with 9 elements?",
+      "choices": "a) 9\nb) 8\nc) 0\nd) Programmer-defined",
+      "answer": "b",
+      "explanation": "Because the first element always starts at 0. So it is on 8 position."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <stdio.h>\n    #include<iostream>\n    using namespace std;\n    int array1[] = {1200, 200, 2300, 1230, 1543};\n    int array2[] = {12, 14, 16, 18, 20};\n    int temp, result = 0;\n    int main()\n    {\n        for (temp = 0; temp < 5; temp++) \n        {\n            result += array1[temp];\n        }\n        for (temp = 0; temp < 4; temp++)\n        {\n            result += array2[temp];\n        }\n        cout << result;\n        return 0;\n    }",
+      "choices": "a) 6553\nb) 6533\nc) 6522\nd) 12200",
+      "answer": "b",
+      "explanation": "In this program we are adding the every element of two arrays. Finally we got output as 6533."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <stdio.h>\n    #include<iostream>\n    using namespace std;\n    int main ()\n    {\n        int array[] = {0, 2, 4, 6, 7, 5, 3};\n        int n, result = 0;\n        for (n = 0; n < 8; n++) \n        {\n            result += array[n];\n        }\n        cout << result;\n        return 0;\n    }",
+      "choices": "a) 25\nb) 26\nc) 27\nd) 21",
+      "answer": "c",
+      "explanation": "We are adding all the elements in the array and printing it. Total elements in the array is 7, but our for loop will go beyond 7 and add a garbage value."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <stdio.h>\n    #include<iostream>\n    using namespace std;\n    int main()\n    {\n        int a = 5, b = 10, c = 15;\n        int arr[3] = {&a, &b, &c};\n        cout << *arr[*arr[1] - 8];\n        return 0;\n    }",
+      "choices": "a) 15\nb) 18\nc) garbage value\nd) compile time erro",
+      "answer": "d",
+      "explanation": "The conversion is invalid in this array. So it will arise error. The following compilation error will be raised:\ncannot convert from ‘int *’ to ‘int’\nThis is because &a, &b and &c represent int* whereas the array defined is of int type."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <stdio.h>\n    #include <iostream>\n    using namespace std;\n    int main()\n    {\n        char str[5] = \"ABC\";\n        cout << str[3];\n        cout << str;\n        return 0;\n    }",
+      "choices": "a) ABC\nb) ABCD\nc) AB\nd) AC",
+      "answer": "a",
+      "explanation": "We are just printing the values of first 3 values."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <stdio.h>\n    #include <iostream>\n    using namespace std;\n    int main()\n    {\n        int array[] = {10, 20, 30};\n        cout << -2[array];\n        return 0;\n    }",
+      "choices": "a) -15\nb) -30\nc) compile time error\nd) garbage value",
+      "answer": "b",
+      "explanation": "It’s just printing the negative value of the concern element."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is the correct definition of an array?",
+      "choices": "a) An array is a series of elements of the same type in contiguous memory locations\nb) An array is a series of element\nc) An array is a series of elements of the same type placed in non-contiguous memory locations\nd) An array is an element of the different type",
+      "answer": "a",
+      "explanation": "Correct definition of an array is An array is a series of elements of the same type in contiguous memory locations."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of the following accesses the seventh element stored in array?",
+      "choices": "a) array[6];\nb) array[7];\nc) array(7);\nd) array;",
+      "answer": "a",
+      "explanation": "The array location starts from zero, So it can accessed by array[6]."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which of the following gives the memory address of the first element in array?",
+      "choices": "a) array[0];\nb) array[1];\nc) array(2);\nd) array;",
+      "answer": "d",
+      "explanation": "To get the address of ith index of an array, we use following syntax (arr + i). So as we need address of first index we will use (arr + 0) equivalent to arr."
+    },
+    {
+      "﻿skill": null,
+      "questions": null,
+      "choices": null,
+      "answer": null,
+      "explanation": null
+    },
+    {
+      "﻿skill": null,
+      "questions": "which keyword is used to define the macros in c++?",
+      "choices": "a) macro\nb) define\nc) #define\nd) #macro",
+      "answer": "c",
+      "explanation": " #define is the keyword which is used to define the macros in c++."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which symbol is used to declare the preprocessor directives?",
+      "choices": "a) #\nb) $\nc) *\nd) ^",
+      "answer": "a",
+      "explanation": "# symbol is used to declare the preprocessor directives."
+    },
+    {
+      "﻿skill": null,
+      "questions": "How many types of macros are there in c++?",
+      "choices": "a) 1\nb) 2\nc) 3\nd) 4",
+      "answer": "b",
+      "explanation": "There are two types of macros. They are object-like and function-like"
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is the mandatory preprocessor directive for c++?",
+      "choices": "a) #define <iostream>\nb) #include <iostream>\nc) #undef <iostream>\nd) #macro <iostream>",
+      "answer": "b",
+      "explanation": "For a c++ program to execute, we need #include<iostream>."
+    },
+    {
+      "﻿skill": null,
+      "questions": " What will be the output of the following C++ code?\n\n    #include <iostream>\n    using namespace std;\n    #define PR(id) cout << \"The value of \" #id \" is \"<<id\n    int main()\n    {\n        int i = 10;\n        PR(i);\n        return 0;\n    }",
+      "choices": "a) 10\nb) 15\nc) 20\nd) 12",
+      "answer": "a",
+      "explanation": "In this program, we are just printing the declared values."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <iostream>\n    using namespace std;\n    #define MIN(a,b) (((a)<(b)) ? a : b)\n    int main ()\n    {\n        float i, j;\n        i = 100.1;\n        j = 100.01;\n        cout <<\"The minimum is \" << MIN(i, j) << endl;\n        return 0;\n    }",
+      "choices": "a) 100.01\nb) 100.1\nc) compile time error\nd) 100",
+      "answer": "a",
+      "explanation": "In this program, we are getting the minimum number using conditional operator."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <iostream>\n    using namespace std;\n    int main ()\n    {\n        cout << \"Value of __LINE__ : \" << __LINE__ << endl;\n        cout << \"Value of __FILE__ : \" << __FILE__ << endl;\n        cout << \"Value of __DATE__ : \" << __DATE__ << endl;\n        cout << \"Value of __TIME__ : \" << __TIME__ << endl;\n        return 0;\n    }",
+      "choices": "a) 5\nb) details about your file\nc) compile time error\nd) runtime error",
+      "answer": "b",
+      "explanation": "In this program, we are using the macros to print the information about the file."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\nadvertisement\n\n    #include <iostream>\n    using namespace std;\n    #define SquareOf(x) x * x\n    int main()\n    {\n        int x;\n        cout << SquareOf(x + 4);\n        return 0;\n    }",
+      "choices": "a) 16\nb) 64\nc) compile time error\nd) 75386824",
+      "answer": "d",
+      "explanation": " In this program, as we have not initialize the variable x, we will get a output of ending digit of 4"
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <iostream>\n    using namespace std;\n    #define MAX 10\n    int main()\n    {\n        int num;\n        num = ++MAX;\n        cout << num;\n        return 0;\n    }",
+      "choices": "a) 11\nb) 10\nc) compile time error\nd) 13",
+      "answer": "c",
+      "explanation": "Macro Preprocessor only replaces occurance of macro symbol with macro symbol value, So we can’t increment the value."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is the other name of the macro?",
+      "choices": "a) scripted directive\nb) executed directive\nc) link directive\nd) executed & link directive",
+      "answer": "a",
+      "explanation": "When the compiler encounters a previously defined macro, it will take the result from that execution itself."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is string objects in C++?",
+      "choices": "a) Stream of alphabets\nb) A stream of well-defined characters\nc) Stream of characters\nd) A stream of characters terminated by \\0",
+      "answer": "b",
+      "explanation": "String is defined as streams of characters, not necessarily terminated by \\0. Also, a string can contain characters other than alphabets."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What is Character-Array?",
+      "choices": "a) array of alphabets\nb) array of well-defined characters\nc) array of characters\nd) array of characters terminated by \\0",
+      "answer": "c",
+      "explanation": "Character-Array is defined as an array of characters, not necessarily terminated by \\0. Also, a character-array can contain characters other than alphabets."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Pick the incorrect statement about Character-Array.",
+      "choices": "a) Character-Array can be terminated by a null character(‘\\0’)\nb) Character-Array has a static size\nc) Character-Array has a dynamic size\nd) Character-Array has a threat of array-decay",
+      "answer": "c",
+      "explanation": "As Character-Array is an array, its size should be defined during its declaration hence the size of Character-Array is static. A Character-Array is not necessarily to be terminated by a null character. Also, it has a threat of array-decay."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Pick the correct statement about string objects in C++.",
+      "choices": "a) String objects must be terminated by a null character(‘\\0’)\nb) String objects have a static size\nc) String objects have a dynamic size\nd) String objects use extra memory than required.",
+      "answer": "c",
+      "explanation": "String objects are dynamic in nature i.e. their size varies as their value changes so they don’t use any extra memory and it is not necessary to terminate a string object by ‘\\0’."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n#include <iostream> \n#include <string>\nusing namespace std; \nint main(int argc, char const *argv[])\n{\n string str;\n cin>>str;\n cout<<str;\n return 0;\n}",
+      "choices": "a) str\nb) Input provided by the user\nc) Error\nd) Segmentation fault",
+      "answer": "b",
+      "explanation": "There is no error in the program and as we are asking the user to enter a string and printing that string to console. Therefore output will be the string provided by the user."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n#include <iostream> \n#include <string>\n#include <cstring>\nusing namespace std; \nint main(int argc, char const *argv[])\n{\n const char *a = \"Hello\\0World\";\n cout<<a;\n return 0;\n}",
+      "choices": "a) Hello World\nb) Hello\nc) World\nd) Error",
+      "answer": "b",
+      "explanation": "char* are terminated by a ‘\\0’ character so the string “Hello\\0World” will be cut down to “Hello”."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n#include <iostream> \n#include <string>\n#include <cstring>\nusing namespace std; \nint main(int argc, char const *argv[])\n{\n string s(\"a\");\n cout<<s;\n return 0;\n}",
+      "choices": "a) a\nb) empty string\nc) Error\nd) Segmentation fault",
+      "answer": "a",
+      "explanation": "string class has a constructor for this call hence the string s will be assigned “a”."
+    },
+    {
+      "﻿skill": null,
+      "questions": "#include <iostream> \n#include <string>\n#include <cstring>\nusing namespace std; \nint main()\n{\n string s('a');\n cout<<s;\n return 0;\n}",
+      "choices": "a) a\nb) empty string\nc) Error\nd) Segmentation fault",
+      "answer": "c",
+      "explanation": "The string class provides string(string s) as a constructor not the string(char) as a constructor therefore this assignment is not valid."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which is the correct way of concatenating a character at the end of a string object?\n\nway 1:\nstring s;\ns = s + 'a';\n \nway 2:\nstring s;\ns.push_back('a');",
+      "choices": "a) 1 only\nb) 2 only\nc) both of them\nd) both are wrong",
+      "answer": "c",
+      "explanation": "string class provides the addition of char and string and also push_back(char) function to append a character at the end of a string"
+    },
+    {
+      "﻿skill": null,
+      "questions": " What will be the output of the following C++ code? #include <iostream>\n#include <string>\nusing namespace std;\nint main ()\n{\n  std::string str (\"Sanfoundry.\");\n  str.back() = '!';\n  std::cout << str << endl;\n  return 0;\n}",
+      "choices": "a) Sanfoundry.!\nb) Sanfoundry.\nc) Sanfoundry!\nd) Sanfoundry!.",
+      "answer": "c",
+      "explanation": "back() function modifies the last character of the string with the character provided."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What does the following statement mean?\n\nint (*fp)(char*)",
+      "choices": "a) pointer to a pointer\nb) pointer to an array of chars\nc) pointer to function taking a char* argument and returns an int\nd) function taking a char* argument and returning a pointer to int",
+      "answer": "c",
+      "explanation": "The (*fn) represents a pointer to a function and char* as arguments and returning int from the function. So according to that, the above syntax represents a pointer to a function taking a char* as an argument and returning int."
+    },
+    {
+      "﻿skill": null,
+      "questions": "The operator used for dereferencing or indirection is ____",
+      "choices": "a) *\nb) &\nc) ->\nd) –>>",
+      "answer": "a",
+      "explanation": " * is used as dereferencing operator, used to read value stored at the pointed address."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Choose the right option.\n\nstring* x, y;",
+      "choices": "a) x is a pointer to a string, y is a string\nb) y is a pointer to a string, x is a string\nc) both x and y are pointers to string types\nd) y is a pointer to a string",
+      "answer": "a",
+      "explanation": "* is to be grouped with the variables, not the data types."
+    },
+    {
+      "﻿skill": null,
+      "questions": "Which one of the following is not a possible state for a pointer.",
+      "choices": "a) hold the address of the specific object\nb) point one past the end of an object\nc) zero\nd) point to a type",
+      "answer": "d",
+      "explanation": "A pointer can be in only 3 states a, b and c."
+    },
+    {
+      "﻿skill": null,
+      "questions": " Which of the following is illegal?",
+      "choices": "a) int *ip;\nb) string s, *sp = 0;\nc) int i; double* dp = &i;\nd) int *pi = 0;",
+      "answer": "c",
+      "explanation": "dp is initialized int value of i."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will happen in the following C++ code snippet?\n\n   int a = 100, b = 200;\n   int *p = &a, *q = &b;\n   p = q;",
+      "choices": "a) b is assigned to a\nb) p now points to b\nc) a is assigned to b\nd) q now points to a",
+      "answer": "b",
+      "explanation": "Assigning to reference changes the object to which the reference is bound."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\nadvertisement\n\n    #include <iostream>\n    using namespace std;\n    int main()\n    {\n        int a = 5, b = 10, c = 15;\n        int *arr[ ] = {&a, &b, &c};\n        cout << arr[1];\n        return 0;\n    }",
+      "choices": "a) 5\nb) 10\nc) 15\nd) it will return some random numbe",
+      "answer": "d",
+      "explanation": "Array element cannot be address of auto variable. It can be address of static or extern variables."
+    },
+    {
+      "﻿skill": null,
+      "questions": "The correct statement for a function that takes pointer to a float, a pointer to a pointer to a char and returns a pointer to a pointer to a integer is ____________",
+      "choices": "a) int **fun(float**, char**)\nb) int *fun(float*, char*)\nc) int **fun(float*, char**)\nd) int ***fun(*float, **char)",
+      "answer": "c",
+      "explanation": "Function that takes pointer to a float, a pointer to a pointer to a char and returns a pointer to a pointer to a integer is int **fun(float*, char**)."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <iostream>\n    using namespace std;\n    int main()\n    {\n        char arr[20];\n        int i;\n        for(i = 0; i < 10; i++)\n            *(arr + i) = 65 + i;\n        *(arr + i) = '\\0';\n        cout << arr;\n        return(0);\n    }",
+      "choices": "a) ABCDEFGHIJ\nb) AAAAAAAAAA\nc) JJJJJJJJ\nd) AAAAAAJJJJ",
+      "answer": "a",
+      "explanation": "Each time we are assigning 65 + i. In first iteration i = 0 and 65 is assigned. So it will print from A to J."
+    },
+    {
+      "﻿skill": null,
+      "questions": "What will be the output of the following C++ code?\n\n    #include <iostream>\n    using namespace std;\n    int main()\n    {\n        char *ptr;\n        char Str[] = \"abcdefg\";\n        ptr = Str;\n        ptr += 5;\n        cout << ptr;\n        return 0;\n    }",
+      "choices": "a) fg\nb) cdef\nc) defg\nd) abcd",
+      "answer": "a",
+      "explanation": "Pointer ptr points to string ‘fg’. So it prints fg."
+    }
+  ]
+}

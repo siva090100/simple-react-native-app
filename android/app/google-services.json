@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "347432445307",
+    "firebase_url": "https://aitutor-f364d.firebaseio.com",
+    "project_id": "aitutor-f364d",
+    "storage_bucket": "aitutor-f364d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347432445307:android:5526df44b8e03bd66749de",
+        "android_client_info": {
+          "package_name": "com.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347432445307-8onivngu1eb4nemg2tnorakqk49rgu2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1k5yz-nX0H1CxH44mi6Wlg4BOe4t46ZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347432445307-8onivngu1eb4nemg2tnorakqk49rgu2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
